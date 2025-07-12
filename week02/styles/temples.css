@@ -18,7 +18,8 @@ body {
     background-color: var(--accent-color);
 }
 
-header, footer {
+header,
+footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     padding: 10px;
@@ -32,7 +33,7 @@ header {
 }
 
 header h1 {
-   padding-left: 10px;
+    padding-left: 10px;
 }
 
 nav {
@@ -61,7 +62,7 @@ nav ul li a:hover {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 800px;
     background-color: #fff;
     border-radius: 20px;
     padding: 10px;
@@ -82,7 +83,7 @@ main h1 {
 }
 
 .temple-img {
-    width: 300px;
+    width: 400px;
     height: 200px;
 }
 
@@ -93,12 +94,118 @@ footer {
     padding: 20px 0;
 }
 
+/* ======== == Hamburger Menu Styles == ======== */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* ======== == Media Query On Small Screen  == ======== */
+@media (max-width: 600px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+        transition: all 0.5s ease;
+        padding: 1rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .navbar {
+        justify-content: end;
+        padding: 0 2rem;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    /* Transform hamburger to X when active */
+    .hamburger.active .hamburger-line:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+/* ======== == Media Query On Large Size == ======== */
+
 @media screen and (min-width: 600px) {
     main div {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    header, footer {
+    .temple-img {
+        width: 100%;
+    }
+
+    header,
+    footer {
         background-color: var(--secondary-color);
     }
 }

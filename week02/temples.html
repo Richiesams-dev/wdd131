@@ -13,19 +13,24 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js"></script>
+    <script src="script/temples.js"></script>
 </head>
 
 <body>
     <header>
         <h1>Temple Album</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+        <nav class="navbar">
+            <div class="hamburger" id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Old</a></li>
+                <li class="nav-item"><a href="#">New</a></li>
+                <li class="nav-item"><a href="#">Large</a></li>
+                <li class="nav-item"><a href="#">Small</a></li>
             </ul>
         </nav>
     </header>
@@ -71,8 +76,8 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 ♦️Richman Bibowei Feidel ♦️ Nigeria</p>
-        <p id="lastModified"></p>
+        <p>&copy; ♦️ 2025 Richman Bibowei Fedidel ♦️ Nigeria <span id="currentyear"></span></p>
+       <p id="lastModified"></p>
     </footer>
 </body>
 
