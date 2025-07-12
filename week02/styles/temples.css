@@ -138,7 +138,7 @@ footer {
 }
 
 /* ======== == Media Query On Small Screen  == ======== */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .hamburger {
         display: flex;
     }
@@ -195,13 +195,14 @@ footer {
 
 /* ======== == Media Query On Large Size == ======== */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 501px) {
     main div {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .temple-img {
         width: 100%;
+        height: 60%;
     }
 
     header,
