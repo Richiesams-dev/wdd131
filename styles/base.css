@@ -102,6 +102,7 @@ main {
 }
 
 #left-card-content p {
+    text-align: justify;
     margin-bottom: 10px;
     line-height: 1.5;
 }
@@ -130,6 +131,7 @@ main {
 }
 
 #hometown p {
+    text-align: justify;
     max-width: 470px
 }
 
