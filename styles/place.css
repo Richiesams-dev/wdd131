@@ -1,6 +1,6 @@
 :root {
     --primary-color: #4CAF50;
-    --secondary-color: #f0f0f0;
+    --secondary-color: #c8f5ef;
     --text-color: #333;
     --font-family: Roboto, sans-serif;
 }
@@ -9,6 +9,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+header, main, footer {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
