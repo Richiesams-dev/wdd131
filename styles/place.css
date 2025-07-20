@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #c8f5ef;
-    --text-color: #333;
+    --primary-color: #228B22;
+    --secondary-color: #f5b4a7;
+    --text-color: #ffffff;
     --font-family: Roboto, sans-serif;
 }
 
@@ -13,18 +13,154 @@
 
 body {
     font-family: var(--font-family);
-    color: var(--text-color);
     background-color: var(--secondary-color);
 }
 
-header, main, footer {
+header,
+footer {
+    background-color: var(--primary-color);
+    height: 100px;
+    padding: 20px 0;
+    color: var(--text-color);
+    text-align: center;
+}
+
+header,
+main,
+footer {
     max-width: 600px;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 600px) {
-    /* body {
-        font-size: 14px;
-    } */
-    
+header {
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: var(--text-color);
+    padding: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.label-value {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    column-gap: 20px;
+    line-height: 2;
+}
+
+.label {
+    font-weight: 700;
+    text-align: right;
+}
+
+.value {
+    font-weight: 400;
+}
+
+#example {
+    text-align: center;
+    padding: 10px;
+    font-weight: 200;
+}
+
+#weather-img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+@media screen and (min-width: 600px) {
+
+    header,
+    main,
+    footer {
+        max-width: 100%;
+        margin: 0 5px;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    .label-value {
+        position: relative;
+        margin: 80px 0 0 0;
+    }
+
+    section {
+        padding: 0 0 20px 0;
+        box-shadow: 0 5px 8px #0c0c0c;
+    }
+
+
+    section h2 {
+        background-color: var(--primary-color);
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    #date {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+
+    #date h2 {
+        margin-bottom: 0;
+    }
+
+    .date {
+        position: relative;
+        top: 20%;
+        left: 5%;
+    }
+
+    .date h2 {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        width: 90%;
+    }
+
+    #weather {
+        width: 250px;
+        height: auto;
+        position: absolute;
+        bottom: -20%;
+        right: 5%;
+    }
+
+    #weather h2 {
+        margin-bottom: 0;
+    }
+
+    .weather {
+        position: relative;
+        bottom: -20%;
+        right: 5%;
+    }
+
+    .weather h2 {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        width: 90%;
+    }
+
+    #weather h2::after {
+        content: "⛅";
+        display: inline-block;
+        margin-left: 35px;
+    }
+
+    img {
+        width: 100%;
+    }
 }

@@ -135,7 +135,7 @@ footer {
     transition: all 0.3s ease;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .hamburger {
         display: flex;
     }

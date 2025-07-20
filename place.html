@@ -15,73 +15,75 @@
 
 <body>
     <header>
-        <h1>Nigeria</h1>
+        <h1>Abuja, Nigeria</h1>
     </header>
     <main>
-        <img src="./images/phoenix-arizona-temple.jpg" alt="image-name">
+        <picture>
+            <source media="(min-width:1000px)" srcset="images\Sheraton,_Abuja_landscape1.webp 3000w"
+                aria-label="Sheraton Abuja Hotel" sizes="(min-width: 1000px)" type="image/webp">
+            <source media="(min-width:601px)" srcset="images\Hilton_Abuja_Meduim1.webp 1083w"
+                aria-label="Hilton Abuja Hotel" sizes="(min-width: 601px)" type="image/webp">
+            <source media="(min-width: 400px)" srcset="images\Aso_Rock_Abuja_Small.webp 700w"
+                aria-label="Millennium Park Abuja" sizes="(max-width: 600px)" type="image/webp">
+            <img src="images\Millennium-Park-Abuja-Nigeria.jpg" alt="Millennium Park, Abuja, Nigeria" width="auto"
+                height="700" loading="lazy" decoding="async">
+        </picture>
         <div>
-            <section>
+            <section class="date" id="date">
                 <h2>Date</h2>
                 <div class="label-value">
                     <span class="label">Area:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value">7,315 km²</span>
+
                     <span class="label">Population:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value">6 million</span>
+
                     <span class="label">Capital:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value">Abuja</span>
+
                     <span class="label">Languages:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value"> English (official), Hausa, Yoruba, Igbo, Gbagyi</span>
+
                     <span class="label">Currency:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value">Nigerian Naira</span>
+
                     <span class="label">Time Zone:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value">UTC+1</span>
+
                     <span class="label">Calling Code:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value">+234</span>
+
                     <span class="label">Internet TLD:</span>
-                    <span class="value"></span>
+                    <span class="value">.ng</span>
                 </div>
             </section>
-            <section>
+            <section class="weather" id="weather">
                 <h2>Weather</h2>
-                <img src="#" alt="icon-name">
+                <picture>
+                    <img id="weather-img" src="images\weather_clouds_sun_sunny_icon.svg"
+                        alt="weather clouds sun sunny icon">
+                </picture>
                 <div class="label-value">
                     <span class="label">Temperature:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value">35°C</span>
+
                     <span class="label">Conditions:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value">Partly Hot</span>
+
                     <span class="label">Wind:</span>
-                    <span class="value"></span>
-                </div>
-                <div class="label-value">
+                    <span class="value">15 km/h</span>
+
                     <span class="label">Wind Chill:</span>
-                    <span class="value"></span>
+                    <span class="value" id="wind-chill"></span>
                 </div>
             </section>
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 ♦️ Richman Bibowei Fedidel ♦️ Nigeria</p>
+        <p>&copy;<span id="currentyear"></span> ♦️ Richman Bibowei Fedidel ♦️ Nigeria</p>
         <p id="lastModified"></p>
     </footer>
-    <p>Example Page in Mobile View</p>
+    <p id="example">Example Page in Mobile View</p>
 </body>
 
 </html>
