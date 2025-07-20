@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --primary-color: #228B22;
     --secondary-color: #f5b4a7;
@@ -94,7 +96,7 @@ section h2 {
 
     section {
         padding: 0 0 20px 0;
-        box-shadow: 0 5px 8px #0c0c0c;
+        box-shadow: 0 3px 8px #0a0a0a;
     }
 
 
@@ -104,7 +106,7 @@ section h2 {
         margin-bottom: 20px;
     }
 
-    #date {
+    #section-date {
         width: 300px;
         height: auto;
         position: absolute;
@@ -112,17 +114,17 @@ section h2 {
         left: 5%;
     }
 
-    #date h2 {
+    #section-date h2 {
         margin-bottom: 0;
     }
 
-    .date {
+    .section-date {
         position: relative;
         top: 20%;
         left: 5%;
     }
 
-    .date h2 {
+    .section-date h2 {
         position: absolute;
         top: 20px;
         right: 40px;
@@ -158,6 +160,10 @@ section h2 {
         content: "⛅";
         display: inline-block;
         margin-left: 35px;
+    }
+
+    #weather-img {
+        display: none;
     }
 
     img {
