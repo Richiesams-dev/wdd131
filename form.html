@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Product Review">
+    <meta name="author" content="Richman Bibowei Fedidel">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="styles/form.css"></script>
+    <title>Product Review</title>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Name</legend>
+                <select name="choice" id="choice">
+                    <option value="option1" disabled>Select a Product</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <p>&star;</p> 
+                <input type="radio" name="rating" id="rating1" required>
+                <p>&star;&star;</p> 
+                <input type="radio" name="rating" id="rating2" required>
+                <p>&star;&star;&star;</p> 
+                <input type="radio" name="rating" id="rating3" required>
+                <p>&star;&star;&star;&star;</p> 
+                <input type="radio" name="rating" id="rating4" required>
+                <p>&star;&star;&star;&star;&star;</p> 
+                <input type="radio" name="rating" id="rating5" required>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <input type="date" name="date" id="date" required>
+            </fieldset>
+            <fieldset>
+                <legend>Useful Features</legend>
+                <p>Which of the features do you find useful in the product?<br><em>(Check all that apply)</em></p>
+                <input type="checkbox" value="Durability" name="Features" id="Features">
+                <input type="checkbox" value="Ease of Use" name="Features" id="Features">
+                <input type="checkbox" value="Performance" name="Features" id="Features">
+                <input type="checkbox" value="Design" name="Features" id="Features">
+            </fieldset>
+            <legend>Write Review <span>(optional)</span></legend>
+            <textarea name="writereview" id="write-review">
+
+            </textarea>
+            <fieldset>
+                <legend>User Name <span>(optional)</span></legend>
+                <input type="text" name="username" id="username">
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Submit Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 ♦️ Richman Bibowei Fedidel ♦️ Nigeria</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>

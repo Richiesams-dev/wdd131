@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #381819;
+    --secondary: #FADADD;
+    --text-color: #ffffff;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    line-height: 1.6;
+    margin: 0 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    font-family: nunito sans;
+    color: var(--primary);
+}
+
+ol, ul, li {
+    margin: 0 0 0 10px;
+}
+
+section > ol > li {
+    margin-bottom: 10px;
+}
+
+section {
+    background-color: var(--secondary);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
