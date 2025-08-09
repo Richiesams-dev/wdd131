@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Delight Bakery - Freshly baked artisan bread, gourmet pastries & custom cakes made daily. Taste the difference with our handcrafted, locally loved treats! Order online for pickup or delivery.">
+    <meta name="author" content="Delight Bakery">
+    <title>Delight Bakery</title>
+    <link rel="stylesheet" href="styles/delight-bakery.css">
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div class="container">
+            <a href="delight-home.html" class="logo">
+                <img src="../images/delight_bakery_logo2.png" alt="Delight Bakery Logo">
+            </a>
+            <nav>
+                <div class="hamburger-menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="delight-home.html">Home</a></li>
+                    <li class="nav-item"><a href="delight-menu.html">Menu</a></li>
+                    <li class="nav-item"><a href="delight-order.html">Order</a></li>
+                </ul>
+                <div class="cart-indicator" id="cartIndicator">
+                    🛒 <span id="cartCount">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Artisan Bakery Fresh From The Oven</h1>
+            <p>Handcrafted with love using traditional recipes and the finest ingredients</p>
+            <div class="hero-buttons">
+                <a href="delight-menu.html" class="cta-button">View Our Menu</a>
+                <a href="delight-order.html" class="cta-button secondary">Order Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="../images/hero-image.png" alt="Freshly baked artisan bread and pastries" loading="lazy">
+        </div>
+    </section>
+
+    <main>
+        <section class="featured-products">
+            <h2>Featured Picks - Fresh from the Oven!</h2>
+            <div class="product-grid" id="featuredProducts">
+                <!-- Products will be loaded here dynamically -->
+            </div>
+        </section>
+        <section>
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"Best croissants in the city!"</p>
+                    <span>- Sarah ★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Their cakes are a work of art!"</p>
+                    <span>- John ★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p>"I love their sourdough bread!"</p>
+                    <span>- Emily ★★★★★</span>
+                </div>
+                <div class="testimonial-slider-controls">
+                    <span class="testimonial-slider-dot active" data-index="0"></span>
+                    <span class="testimonial-slider-dot" data-index="1"></span>
+                    <span class="testimonial-slider-dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <p>123 Baker Street<br>San Francisco, CA</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 7am-7pm<br>Sat-Sun: 8am-6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@delightbakery.com">info@delightbakery.com</a></p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.svg"
+                            alt="Facebook" width="100" height="100"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.svg"
+                            alt="Instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter.svg"
+                            alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Delight Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

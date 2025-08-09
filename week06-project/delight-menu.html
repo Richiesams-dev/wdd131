@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Delight Bakery</title>
+    <link rel="stylesheet" href="styles/delight-bakery.css">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/menu.js"></script>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div class="container">
+            <a href="delight-home.html" class="logo">
+                <img src="../images/delight_bakery_logo2.png" alt="Delight Bakery Logo">
+            </a>
+            <nav>
+                <div class="hamburger-menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="delight-home.html">Home</a></li>
+                    <li class="nav-item"><a href="delight-menu.html">Menu</a></li>
+                    <li class="nav-item"><a href="delight-order.html">Order</a></li>
+                </ul>
+                <div class="cart-indicator" id="cartIndicator">
+                    🛒 <span id="cartCount">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero menu-hero">
+        <div class="hero-content">
+            <h1>Our Artisan Bakery Menu</h1>
+            <p>Discover our selection of handcrafted breads, pastries, and cakes made fresh daily</p>
+        </div>
+    </section>
+
+    <main class="menu-page">
+        <div class="menu-header">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="cakes">Cakes</button>
+                <button class="filter-btn" data-category="pastries">Pastries</button>
+                <button class="filter-btn" data-category="bread">Bread</button>
+            </div>
+        </div>
+
+        <div class="product-grid" id="menuProducts">
+            <!-- Dynamically loaded from menu.js -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <p>123 Baker Street<br>San Francisco, CA</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 7am-7pm<br>Sat-Sun: 8am-6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@delightbakery.com">info@delightbakery.com</a></p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.svg"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.svg"
+                            alt="Instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter.svg"
+                            alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Delight Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
