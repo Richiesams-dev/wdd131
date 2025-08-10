@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 6,
-            name: "White Vienna Loaf",
+            name: "Pane di Casa Loaf",
             price: 10.99,
             category: "bread",
-            description: "Classic white Vienna loaf, perfect for sandwiches",
-            imageUrl: "https://www.cobsbread.com/cdn-cgi/image/width=600,quality=75,format=webp/wp-content/uploads/2025/05/CAPROD000003_000_001-1.jpg"
+            description: "Traditional Italian bread with a soft interior",
+            imageUrl: "https://www.cobsbread.com/wp-content/uploads/2018/01/cobs-product-pane-di-casa-loaf-583x400.png"
         },
         {
             id: 7,

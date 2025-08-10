@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delight Bakery - Order Confirmation">
+    <meta name="author" content="Delight Bakery">
+    <title>Order Confirmation | Delight Bakery</title>
+    <link rel="stylesheet" href="styles/delight-bakery.css">
+</head>
+
+<body>
+    <header class="sticky-header">
+        <div class="container">
+            <a href="delight-home.html" class="logo">
+                <img src="../images/delight_bakery_logo2.png" alt="Delight Bakery Logo">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="delight-home.html">Home</a></li>
+                    <li class="nav-item"><a href="delight-menu.html">Menu</a></li>
+                    <li class="nav-item"><a href="delight-order.html">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="confirmation-container">
+        <h1>Thank You for Your Order!</h1>
+        
+        <div class="success-message">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="#4caf50">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            <h2>Order Confirmed!</h2>
+            <p>Your order #<span id="orderNumber"></span> has been received and is being prepared.</p>
+            <p>We'll send a confirmation email shortly.</p>
+        </div>
+        <div class="confirmation-actions">
+            <a href="delight-menu.html" class="confirmation-btn primary-btn">Order Again</a>
+            <a href="delight-home.html" class="confirmation-btn secondary-btn">Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <p>123 Baker Street<br>San Francisco, CA</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon-Fri: 7am-7pm<br>Sat-Sun: 8am-6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@delightbakery.com">info@delightbakery.com</a></p>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="currentYear"></span> Delight Bakery. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
