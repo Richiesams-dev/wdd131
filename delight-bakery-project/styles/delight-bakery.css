@@ -193,7 +193,6 @@ section h2 {
 /* Menu Page Hero */
 .menu-hero {
     min-height: 50vh;
-    background: url('../images/menu-hero-bg.jpg') center/cover no-repeat;
     text-align: center;
     color: white;
     justify-content: center;
@@ -435,10 +434,6 @@ section h2 {
 .quantity-btn:hover {
     background: #e9ecef;
     transform: scale(1.05);
-}
-
-.quantity-btn svg {
-    pointer-events: none;
 }
 
 .quantity {
